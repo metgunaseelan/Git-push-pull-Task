@@ -2,20 +2,12 @@ package org.tcs;
 
 public class ProjectA {
 	
-	private void m1() {
-		System.out.println("Method 1");
+	private ProjectA() {
+		System.out.println("Default constructor");
 	}
 
-	private void m2() {
-		System.out.println("Method 2");
-
-	}
-
-	public static void main(String[] args) {
-		ProjectA p = new ProjectA();
-		
-		p.m1();
-		p.m2();
+	private ProjectA(int a) {
+		System.out.println("Parameterised Constructor");
 		
 	}
 
